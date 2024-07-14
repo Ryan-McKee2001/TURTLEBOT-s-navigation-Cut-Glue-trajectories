@@ -1,0 +1,26 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/tb3/ros2_ws/install/planner_interfaces/include/**",
+        "/home/tb3/ros2_ws/install/nav2_rrt_planner/include/**",
+        "/home/tb3/nav2_plugin_ws/install/nav2_straightline_planner/include/**",
+        "/opt/ros/humble/include/**",
+        "/home/tb3/ros2_ws/src/global_planner_plugins/planner_custom_interfaces/include/**",
+        "/home/tb3/ros2_ws/src/nav2_rrt_planner/include/**",
+        "include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

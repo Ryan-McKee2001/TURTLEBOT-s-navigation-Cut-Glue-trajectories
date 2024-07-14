@@ -1,0 +1,22 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/tb3/ros2_ws/build/tb3_slam_exploration",
+        "/home/tb3/ros2_ws/install/tb3_slam_exploration/lib/python3.10/site-packages",
+        "/home/tb3/ros2_ws/install/ros2_tb3_perimeter_patrol/lib/python3.10/site-packages",
+        "/home/tb3/ros2_ws/build/my_robot_controller",
+        "/home/tb3/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages",
+        "/home/tb3/ros2_ws/install/ROS2-TB3-PerimeterPatrol/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/tb3/ros2_ws/build/tb3_slam_exploration",
+        "/home/tb3/ros2_ws/install/tb3_slam_exploration/lib/python3.10/site-packages",
+        "/home/tb3/ros2_ws/install/ros2_tb3_perimeter_patrol/lib/python3.10/site-packages",
+        "/home/tb3/ros2_ws/build/my_robot_controller",
+        "/home/tb3/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages",
+        "/home/tb3/ros2_ws/install/ROS2-TB3-PerimeterPatrol/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}

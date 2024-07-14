@@ -1,0 +1,5 @@
+<library path="nav2_custom_planner_client_plugin">
+	<class name="nav2_custom_planner_client/CustomPlannerClient" type="nav2_custom_planner_client::CustomPlannerClient" base_class_type="nav2_core::GlobalPlanner">
+	  <description>This is an example plugin which produces straight path.</description>
+	</class>
+</library>

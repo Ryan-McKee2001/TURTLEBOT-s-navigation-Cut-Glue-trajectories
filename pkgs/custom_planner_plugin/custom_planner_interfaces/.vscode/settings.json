@@ -1,0 +1,18 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/tb3/ros2_ws/install/wall_follower/lib/python3.10/site-packages",
+        "/home/tb3/ros2_ws/install/ros2_tb3_perimeter_patrol/lib/python3.10/site-packages",
+        "/home/tb3/ros2_ws/install/planner_interfaces/local/lib/python3.10/dist-packages",
+        "/home/tb3/nav2_plugin_ws/install/nav2_gps_waypoint_follower_demo/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/tb3/ros2_ws/install/wall_follower/lib/python3.10/site-packages",
+        "/home/tb3/ros2_ws/install/ros2_tb3_perimeter_patrol/lib/python3.10/site-packages",
+        "/home/tb3/ros2_ws/install/planner_interfaces/local/lib/python3.10/dist-packages",
+        "/home/tb3/nav2_plugin_ws/install/nav2_gps_waypoint_follower_demo/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}

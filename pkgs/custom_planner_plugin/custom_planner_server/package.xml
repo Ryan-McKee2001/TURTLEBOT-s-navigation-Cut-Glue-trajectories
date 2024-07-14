@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>custom_planner_server</name>
+  <version>1.0.0</version>
+  <description>ROS2 server containing several different planners implemented in python</description>
+  <maintainer email="rmckee31@qub.ac.uk">tb3</maintainer>
+  <license>NA</license>
+
+  <depend>rclpy</depend>
+  <depend>custom_planner_interfaces</depend>
+  <depend>geometry_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>std_msgs</depend>
+  <depend>numpy</depend>
+  <depend>planners</depend>
+  <depend>threading</depend>
+
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>python3-pytest</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>wall_follower</name>
+  <version>1.0.0</version>
+  <description>A simple package that contains experimenatal behavior for robot wall following in a square environmnet</description>
+  <maintainer email="rmckee31@qub.ac.uk">Ryan McKee</maintainer>
+  <license>NA</license>
+
+  <depend>geometry_msgs/msg/Twist</depend>
+  <depend>sensor_msgs/msg/LaserScan</depend>
+  <depend>std_msgs/msg</depend>
+  <depend>std_srvs/srv</depend>
+
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>python3-pytest</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>

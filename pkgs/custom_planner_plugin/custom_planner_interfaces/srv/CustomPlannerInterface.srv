@@ -1,0 +1,8 @@
+# CustomPlannerInterface.srv
+geometry_msgs/PoseStamped start_pose  # srv message used by the RRT_server service 
+geometry_msgs/PoseStamped end_pose    # for requests and responses.
+nav_msgs/OccupancyGrid occupancy_grid
+---
+bool success # Returns true if path was found, false otherwise
+std_msgs/Float32MultiArray path # Returns a list 2d path coordinates [[x,y], [x,y],...,[x,y]]
+# to get to desired end_pose from start pose in the quickest possible way.
