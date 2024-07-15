@@ -4,7 +4,7 @@
 
 The ROS2 NAV2 stack contains several different behaviours that make up navigation. Each of these behaviours has their own processes that form the logic of how that individual component works. Within ROS, these behaviours are compiled into a tree structure forming a behaviour tree. This creates a human-readable, standardised structure for creating multi-state robotic applications. These behaviour trees are defined in a standardised nav2 format using XML. 
 
-For further information regarding the navigation2 stack, visit [here](https://navigation.ros.org/concepts/index.html#ros-2).
+For further information regarding the navigation2 stack, visit [here](https://docs.nav2.org/).
 
 During this project, I have used one of the main behavior trees (BT) used in Nav2, the `bt_navigator/navigate_to_pose_w_replanning_and_recovery.xml`. 
 
