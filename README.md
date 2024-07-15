@@ -1,68 +1,74 @@
-</style>
+# TurtleBot(s) Navigation: "Cut & Glue" Trajectories
 
-# TURTLEBOT(s) navigation: "Cut & Glue" trajectories
-This project aims to develop an autonomous TurtleBot capable of navigating flat indoor terrain using advanced robotics and motion planning techniques within the ROS environment. Equipped with LiDAR and powerful motor control, the TurtleBot 3 Burger serves as the ideal platform for this endeavor.
+This project aimed to develop an autonomous TurtleBot capable of navigating flat indoor terrain using advanced robotics and motion planning techniques within the ROS environment. Equipped with LiDAR and powerful motor control, the TurtleBot 3 Burger serves as the ideal platform for this endeavor.
 
-## Objectives:
+## Objectives
+
 1. Understand mobile robot dynamics and planning methods.
 2. Assemble and integrate TurtleBot 3 with ROS.
 3. Develop and implement planning algorithms in simulation and in real world.
 4. Conduct a series of experiments to evaluate the navigation system's performance under various scenarios and associated costs.
 
-## Setup:
+## Setup
 
-### Setup: Pre-requisites
-This project was made and used on ROS Humble with ubuntu 22.04 in mind. Please ensure you have HUmble or a compatable version of ROS setup up with the dependency packages for this project including SLAM-cargographer, ros2-navigation and turtlebot3 and colcon build tools If you need an in detail set by step guide on setting up your envrionment ([tutorial](https://gitlab.eeecs.qub.ac.uk/40294886/turtlebot_navigation-cut_and_glue_trajectories/-/blob/b33d09b1353e20f2beaf6e88cc33a92bc51d501b/documentation/ros2_turtlebot3_setup_guide.md))
+### Prerequisites
 
-### Setup: Install
-Clone the reporitory in your colcon ros2 workspace.
-```bash
-cd ~/ros2_ws/src
-git clone https://gitlab.eeecs.qub.ac.uk/40294886/turtlebot_navigation-cut_and_glue_trajectories.git
-```
+This project was developed using ROS Humble with Ubuntu 22.04. Ensure you have ROS Humble or a compatible version of ROS set up along with the dependency packages for this project, including SLAM Cartographer, ros2-navigation, turtlebot3, and colcon build tools. For a detailed step-by-step guide on setting up your environment, refer to the [setup guide](https://gitlab.eeecs.qub.ac.uk/40294886/turtlebot_navigation-cut_and_glue_trajectories/-/blob/b33d09b1353e20f2beaf6e88cc33a92bc51d501b/documentation/ros2_turtlebot3_setup_guide.md).
 
-Install dependencies for the the ros packages in the project.
-```bash
-cd ~.ros2_ws/ && rosdep install --from-paths src --ignore-src -r -y
-```
+### Installation
 
-Build the colcon workspace using symlink-install for workspace storage otimzation improved package management
-```bash
-cd ~/ros2_ws/ && colcon build --symlink-install
-```
+1. Clone the repository into your colcon ROS 2 workspace:
+    ```bash
+    cd ~/ros2_ws/src
+    git clone https://gitlab.eeecs.qub.ac.uk/40294886/turtlebot_navigation-cut_and_glue_trajectories.git
+    ```
 
-Source the project ()this will source the setup.bash file for bootstrapping your ros2_ws for use within your ros environment, only add this once) 
-```bash
-echo "source ~/ros2_ws/install/setup.bash" >> ~/.bashrc
-```
-you should now be able to run any of the packages wihin the turtlebot3_navigtaion2_tutorials folder.
+2. Install dependencies for the ROS packages in the project:
+    ```bash
+    cd ~/ros2_ws/
+    rosdep install --from-paths src --ignore-src -r -y
+    ```
 
-## Project structure
-### documenation
+3. Build the colcon workspace using symlink-install for workspace storage optimization and improved package management:
+    ```bash
+    cd ~/ros2_ws/
+    colcon build --symlink-install
+    ```
+
+4. Source the project (this will source the `setup.bash` file for bootstrapping your `ros2_ws` for use within your ROS environment):
+    ```bash
+    echo "source ~/ros2_ws/install/setup.bash" >> ~/.bashrc
+    source ~/.bashrc
+    ```
+
+You should now be able to run any of the packages within the `turtlebot3_navigation2_tutorials` folder.
+
+## Project Structure
+
+### Documentation
+
 Contains documentation related to the project, including the dissertation, guides for ROS setup, diagrams for project architectures, and any additional documentation needed throughout the project.
 
-#### launch_scripts
-Here's the revised version with improved spelling, formatting, and added clarity:
-Project Structure
-Documentation
+### Launch Scripts
 
-Contains documentation related to the project, including the dissertation, guides for ROS setup, diagrams for project architectures, and any additional documentation needed throughout the project.
-Launch Scripts
+Contains bash scripts for launching `nav2_launch` files, both for real and simulation environments. These scripts experiment with different global planners, including default planners such as Dijkstra and A*, as well as our custom planner server implementations (RRT, A*, and Dijkstra).
 
-Contains bash scripts for launching nav2_launch files, both for real and simulation environments. These scripts experiment with different global planners, including default planners such as Dijkstra and A*, as well as our custom planner server implementations (RRT, A*, and Dijkstra). 
+### Maps
 
-#### maps
 Contains the 2D occupancy grid PGM files and associated YAML files generated by SLAM. These files are utilized by the Navigation2 stack for different environments tested during the project.
 
-#### params
-This folder contains custom param.xml files used by the Navigation2 stack to define behavior trees. These param.xml files have been customized to use different planner algorithms, including default Dijkstra, A*, and our custom planner server.
+### Params
 
-#### pkgs
+This folder contains custom `param.xml` files used by the Navigation2 stack to define behavior trees. These `param.xml` files have been customized to use different planner algorithms, including default Dijkstra, A*, and our custom planner server.
+
+### Pkgs
+
 This is the main directory of our project, containing several ROS 2 packages:
-- custom_planner_plugin: Contains the code for our custom_planner_plguin ([information](<./pkgs/custom_planner_plugin/README.md>))
-- wall_follower: This is the wall follower algorithms which has the robot drive around the edges of the maps ([information](./pkgs/wall_follower/README.md))
+- **custom_planner_plugin**: Contains the code for our custom planner plugin ([information](./pkgs/custom_planner_plugin/README.md))
+- **wall_follower**: Contains the wall follower algorithm which drives the robot around the edges of the maps ([information](./pkgs/wall_follower/README.md))
 
 ## Dissertation
-The outcomes of this project, along with discussions on experiment implementation and other relevant details, are documented in my dissertation: ([link](./documentation/dissertation/mckee_ryan_40294886__Dissertation.docx))
 
-![App Screenshot](https://d12elhfsqslwlk.cloudfront.net/pub/media/catalog/product/cache/2554ecfed266aca312c60880c42d2046/t/b/tb_burger_rp4_2gb_500.jpg)
+The outcomes of this project, along with discussions on experiment implementation and other relevant details, are documented in my dissertation: [link](./documentation/dissertation/mckee_ryan_40294886__Dissertation.docx)
+
+![TurtleBot 3 Burger](https://d12elhfsqslwlk.cloudfront.net/pub/media/catalog/product/cache/2554ecfed266aca312c60880c42d2046/t/b/tb_burger_rp4_2gb_500.jpg)
