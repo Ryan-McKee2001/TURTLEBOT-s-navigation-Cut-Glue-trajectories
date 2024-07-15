@@ -8,7 +8,7 @@ For further information regarding the navigation2 stack, visit [here](https://do
 
 During this project, I have used one of the main behavior trees (BT) used in Nav2, the `bt_navigator/navigate_to_pose_w_replanning_and_recovery.xml`. 
 
-For more information regarding this behaviour tree, visit [here](https://navigation.ros.org/behavior_trees/overview/detailed_behavior_tree_walkthrough.html).
+For more information regarding this behaviour tree, visit [here](https://docs.nav2.org/behavior_trees/index.html).
 
 ![image](./images/bt-navigator--navigate-to-pose-w-replanning-and-recovery.xml.png)
 
