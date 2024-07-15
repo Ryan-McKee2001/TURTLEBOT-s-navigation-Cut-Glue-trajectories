@@ -1,4 +1,4 @@
-# Turtlebot3 Wall Follower Algorithm
+# TurtleBot3 Wall Follower Algorithm
 
 This package contains the implementation of the `wall_follower` node algorithm. This simple algorithm utilizes Turtlebot3's laserscan data to autonomously navigate and avoid obstacles in simple environments.
 
