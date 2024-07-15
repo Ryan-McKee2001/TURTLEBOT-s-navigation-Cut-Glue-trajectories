@@ -14,7 +14,7 @@ For more information regarding this behaviour tree, visit [here](https://docs.na
 
 ## Goal
 
-The goal of this package was to create a number of nodes to override the Navigation subtree's global planner. This required extensive research and experimentation as this is a niche topic and there are not many examples online. The one example was the [Straightline planner tutorial](https://navigation.ros.org/plugin_tutorials/docs/writing_new_nav2planner_plugin.html) provided by nav2 for creating a plugin for the global planner part of the navigation2 stack. However, even it had issues I had to solve through looking at source code with it saying to update the `nav2_params.yaml` with outdated params:
+The goal of this package was to create a number of nodes to override the Navigation subtree's global planner. This required extensive research and experimentation as this is a niche topic and there are not many examples online. The one example was the [Straightline planner tutorial](https://github.com/ros-navigation/navigation2_tutorials/tree/master/nav2_straightline_planner) provided by nav2 for creating a plugin for the global planner part of the navigation2 stack. However, even it had issues I had to solve through looking at source code with it saying to update the `nav2_params.yaml` with outdated params:
 
 ```yaml
 planner_server:
